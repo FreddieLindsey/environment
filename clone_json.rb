@@ -39,8 +39,16 @@ def process_bundle(b, dir_ = '', indent = 0)
 end
 
 def clone_repo(remote, item, dir, indent = 0)
-  print "\t" * indent, Git.clone(remote, item, path: dir)
-  puts
+  git_dir = "#{dir}/#{item}"
+  if File.directory?(dir) && File.directory?("#{git_dir}/.git")
+    g = Git.open(git_dir)
+    print "\t" * indent, "Fetching remote for:\t", item, "\n"
+    g.remotes.each(&:fetch)
+  elsif File.directory?(dir)
+    print "\t" * indent, "Not a git repository, ignoring:\t", item, "\n"
+  else
+    print "\t" * indent, Git.clone(remote, item, path: dir), "\n"
+  end
 end
 
 # Main
