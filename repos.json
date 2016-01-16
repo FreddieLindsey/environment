@@ -73,9 +73,60 @@
                 "dir": "haskell",
                 "bundle": [
                   {
-                    "name": "bdd",
+                    "name": "Ex 1 - BDD",
                     "dir": "bdd",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_bdd"
+                  },
+                  {
+                    "name": "Ex 2 - Calculus",
+                    "dir": "calculus",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_calculus"
+                  },
+                  {
+                    "name": "Ex 3 - Macro Processor",
+                    "dir": "macro_processor",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_macroprocessor"
+                  },
+                  {
+                    "name": "Ex 4 - L Systems",
+                    "dir": "lsystems",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_lsystems"
+                  },
+                  {
+                    "name": "Ex 5 - Radix Trees",
+                    "dir": "radixtrees",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_radixtrees"
+                  },
+                  {
+                    "name": "Practice Test - Optimal Scheduling",
+                    "dir": "_practice_optimal_scheduling",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_practice_optimalscheduling"
+                  },
+                  {
+                    "name": "Ex 6 - Parser",
+                    "dir": "parser",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_parser"
+                  },
+                  {
+                    "name": "Ex 7 - Quadratic",
+                    "dir": "quadratic",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_quadratic"
+                  },
+                  {
+                    "name": "Ex 8 - Recursive",
+                    "dir": "recursive",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_recursive"
+                  }
+                ]
+              },
+              {
+                "name": "Miscellaneous",
+                "dir": "misc",
+                "bundle": [
+                  {
+                    "name": "CO112 Dlock",
+                    "dir": "co112_dlock",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_co112_dlock"
                   }
                 ]
               },

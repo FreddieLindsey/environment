@@ -56,13 +56,13 @@ def clone_repo(remote, item, dir, recursive, indent = 0, name = nil)
       commit = g.log[0]
       hash = commit.to_s
       hash = hash.length > 10 ? hash[0..9] : hash
-      print "\r\033[2K", "\t" * indent, "Cloned:\t", name,
+      print "\r\033[2K", "\t" * indent, "Cloned:\t\t", name,
             ' @ ', hash, ' - ', message
       `git -C #{git_dir} submodule update --init` if recursive
       puts
     end
   rescue Git::GitExecuteError
-    print "\t" * indent, "Error (does the repo exist?):\t", item,
+    print "\r\033[2K", "\t" * indent, "Error (does the repo exist?):\t", item,
           ' => ', remote, "\n"
   end
 end
