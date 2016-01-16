@@ -55,7 +55,6 @@ end
 # Main
 
 file = File.new('repos.json', 'r')
-json_notparsed = file.read
-file_config = JSON.parse(json_notparsed)
+file_config = JSON.parse(file.read)
 
 process_bundle(file_config)
