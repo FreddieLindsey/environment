@@ -5,6 +5,8 @@ require 'git'
 require 'JSON'
 
 def process_bundle(b, dir_ = '', indent = 0)
+  b.sort! { |a_, b_| a_['name'] <=> b_['name'] }
+
   b.each do |repo|
     bundle = repo['bundle']
 

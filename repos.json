@@ -32,7 +32,7 @@
                 "dir": "c",
                 "bundle": [
                   {
-                    "dir": "pintos",
+                    "dir": "Pintos Operating System",
                     "remote": "git@github.com:FreddieShoreditch/pintos_os"
                   }
                 ]
@@ -42,9 +42,29 @@
                 "dir": "cpp",
                 "bundle": [
                   {
-                    "name": "enigma",
+                    "name": "Enigma",
                     "dir": "enigma",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_enigma"
+                  },
+                  {
+                    "name": "LinkLoad",
+                    "dir": "linkload",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_linkload"
+                  },
+                  {
+                    "name": "Tutorial 2",
+                    "dir": "tutorial_2",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_tutorial_2"
+                  },
+                  {
+                    "name": "Tutorial 1",
+                    "dir": "tutorial_1",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_tutorial_1"
+                  },
+                  {
+                    "name": "Tutorial 3",
+                    "dir": "tutorial_3",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_tutorial_3"
                   }
                 ]
               },
@@ -74,7 +94,33 @@
                 "name": "Java",
                 "dir": "java",
                 "bundle": [
-
+                  {
+                    "name": "Concurrency Coursework 1",
+                    "dir": "concurrency_cw_1",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_concurrency_cw_1"
+                  }
+                ]
+              },
+              {
+                "name": "Prolog",
+                "dir": "prolog",
+                "bundle": [
+                  {
+                    "name": "Intro to Prolog",
+                    "dir": "intro_to_prolog",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_intro_to_prolog"
+                  }
+                ]
+              },
+              {
+                "name": "Haskell",
+                "dir": "haskell",
+                "bundle": [
+                  {
+                    "name": "Code Generation for Function Calls (compilers)",
+                    "dir": "code_gen_func_calls",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_haskell_codegenforfunctioncalls"
+                  }
                 ]
               }
             ]
