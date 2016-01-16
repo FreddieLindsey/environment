@@ -8,8 +8,15 @@
         "dir": "personal",
         "bundle": [
           {
-            "dir": "cpp/scrabble_bot",
-            "remote": "git@github.com:FreddieShoreditch/scrabble_bot"
+            "name": "C++",
+            "dir": "cpp",
+            "bundle": [
+              {
+                "name": "Scrabble Bot!",
+                "dir": "scrabble_bot",
+                "remote": "git@github.com:FreddieShoreditch/scrabble_bot"
+              }
+            ]
           }
         ]
       },
@@ -28,7 +35,7 @@
             "dir": "year_2",
             "bundle": [
               {
-                "name": "c",
+                "name": "C",
                 "dir": "c",
                 "bundle": [
                   {
@@ -38,7 +45,7 @@
                 ]
               },
               {
-                "name": "c++",
+                "name": "C++",
                 "dir": "cpp",
                 "bundle": [
                   {

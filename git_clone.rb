@@ -2,7 +2,6 @@
 
 require 'fileutils'
 require 'git'
-require 'JSON'
 
 def process_bundle(b, dir_ = '', indent = 0)
   b.sort! { |a_, b_| a_['name'] <=> b_['name'] }
@@ -26,29 +25,30 @@ def process_bundle(b, dir_ = '', indent = 0)
       item = dir[-1]
       dir = dir[0..dir.length - 2].join('/')
 
-      clone_repo(remote, item, dir, repo['recursive'], indent)
+      clone_repo(remote, item, dir, repo['recursive'], indent, repo['name'])
     end
   end
 end
 
-def clone_repo(remote, item, dir, recursive, indent = 0)
+def clone_repo(remote, item, dir, recursive, indent = 0, name = nil)
+  name = item unless name
   git_dir = "#{dir}/#{item}"
   begin
     if File.directory?(dir) && File.directory?("#{git_dir}/.git")
-      print "\t" * indent, "Checking git repository:\t", item
+      print "\t" * indent, "Checking git repository:\t", name
       g = Git.open(git_dir)
-      print "\r\033[2K", "\t" * indent, "Fetching remote for:\t", item
+      print "\r\033[2K", "\t" * indent, "Fetching remote for:\t", name
       g.remotes.each(&:fetch)
       `git -C #{git_dir} submodule update --init >/dev/null 2>&1` if recursive
-      print "\r\033[2K", "\t" * indent, "Fetched:\t", item
+      print "\r\033[2K", "\t" * indent, "Fetched:\t", name
       puts
     elsif File.directory?(git_dir)
-      print "\t" * indent, "Not a git repository, ignoring:\t", item
+      print "\t" * indent, "Not a git repository, ignoring:\t", name
       puts
     else
-      print "\t" * indent, "Cloning:\t", item
+      print "\t" * indent, "Cloning:\t", name
       Git.clone(remote, item, path: dir)
-      print "\r\033[2K", "\t" * indent, "Cloned:\t", item
+      print "\r\033[2K", "\t" * indent, "Cloned:\t", name
       `git -C #{git_dir} submodule update --init` if recursive
       puts
     end
@@ -57,10 +57,3 @@ def clone_repo(remote, item, dir, recursive, indent = 0)
           ' => ', remote, "\n"
   end
 end
-
-# Main
-
-file = File.new("#{ENV['HOME']}/.setup_environment/repos.json", 'r')
-file_config = JSON.parse(file.read)
-
-process_bundle(file_config)
