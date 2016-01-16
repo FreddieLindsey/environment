@@ -1,6 +1,10 @@
 #!/usr/bin/env ruby
 
-require './git_clone'
+load_dir = File.dirname(
+  File.symlink?(__FILE__) ? File.readlink(__FILE__) : __FILE__
+)
+
+require "#{load_dir}/git_clone"
 
 require 'JSON'
 

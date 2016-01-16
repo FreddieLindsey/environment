@@ -35,7 +35,11 @@
         "name": "Commissioned",
         "dir": "commissioned",
         "bundle": [
-
+          {
+            "name": "The Tea Cosy Club",
+            "dir": "tea_cosy_club",
+            "remote": "git@bitbucket.org:DaisyACooney/the_tea_cosy_club"
+          }
         ]
       },
       {
@@ -52,7 +56,17 @@
           {
             "name": "Year 1",
             "bundle": [
-
+              {
+                "name": "C",
+                "dir": "c",
+                "bundle": [
+                  {
+                    "name": "ARM11 Emulator/Assembler",
+                    "dir": "arm11_emulator_assembler",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_c_arm11_project"
+                  }
+                ]
+              }
             ]
           },
           {
