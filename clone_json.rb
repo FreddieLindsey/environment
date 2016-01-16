@@ -10,13 +10,14 @@ def process_bundle(b, dir_ = '', indent = 0)
   b.each do |repo|
     bundle = repo['bundle']
     if bundle
-      print "\t" * indent, "Synchronising bundle:\t", repo['name']
-      puts
+      print "\t" * indent, "Synchronising bundle:\t", repo['name'], "\n"
       if repo['dir']
-        dir = repo['dir']
+        dir = dir_
+        dir += repo['dir']
       else
         dir = dir_
       end
+      FileUtils.mkpath(dir) if dir != ''
       dir += '/' if dir[-1] != '/'
       process_bundle(bundle, dir, indent + 1)
     else
@@ -27,7 +28,6 @@ def process_bundle(b, dir_ = '', indent = 0)
       dir += repo['dir']
       dir = dir.split('/')
 
-      dir.delete('')
       dir.delete('.')
 
       item = dir[-1]
@@ -44,10 +44,11 @@ def clone_repo(remote, item, dir, indent = 0)
     g = Git.open(git_dir)
     print "\t" * indent, "Fetching remote for:\t", item, "\n"
     g.remotes.each(&:fetch)
-  elsif File.directory?(dir)
+  elsif File.directory?(git_dir)
     print "\t" * indent, "Not a git repository, ignoring:\t", item, "\n"
   else
-    print "\t" * indent, Git.clone(remote, item, path: dir), "\n"
+    Git.clone(remote, item, path: dir)
+    print "\t" * indent, "Cloned:\t", item, "\n"
   end
 end
 

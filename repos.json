@@ -1,39 +1,57 @@
 [
   {
-    "name": "Personal",
-    "dir": "personal",
+    "name": "All repositories",
+    "dir": "/Users/Freddie/code",
     "bundle": [
       {
-        "dir": "cpp/scrabble_bot",
-        "remote": "git@github.com:FreddieShoreditch/scrabble_bot"
-      }
-    ]
-  },
-  {
-    "name": "Imperial Year 1",
-    "bundle": [
-
-    ]
-  },
-  {
-    "name": "Imperial Year 2",
-    "bundle": [
+        "name": "Personal",
+        "dir": "personal",
+        "bundle": [
+          {
+            "dir": "cpp/scrabble_bot",
+            "remote": "git@github.com:FreddieShoreditch/scrabble_bot"
+          }
+        ]
+      },
       {
-        "dir": "imperial/year_2/c/pintos",
-        "remote": "git@github.com:FreddieShoreditch/pintos_os"
-      }
-    ]
-  },
-  {
-    "name": "Imperial Year 3",
-    "bundle": [
+        "name": "Imperial",
+        "dir": "imperial",
+        "bundle": [
+          {
+            "name": "Year 1",
+            "bundle": [
 
-    ]
-  },
-  {
-    "name": "Imperial Year 4",
-    "bundle": [
+            ]
+          },
+          {
+            "name": "Year 2",
+            "dir": "year_2",
+            "bundle": [{
+              "name": "c",
+              "dir": "c",
+              "bundle": [
+                {
+                  "dir": "pintos",
+                  "remote": "git@github.com:FreddieShoreditch/pintos_os"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Year 3",
+          "bundle": [
 
-    ]
-  }
+          ]
+        },
+        {
+          "name": "Year 4",
+          "bundle": [
+
+          ]
+        }
+      ]
+    }
+  ]
+}
 ]
