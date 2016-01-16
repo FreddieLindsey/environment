@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Personal",
+    "dir": "personal",
+    "bundle": [
+      {
+        "dir": "cpp/scrabble_bot",
+        "remote": "git@github.com:FreddieShoreditch/scrabble_bot"
+      }
+    ]
+  },
+  {
+    "name": "Imperial Year 1",
+    "bundle": [
+
+    ]
+  },
+  {
+    "name": "Imperial Year 2",
+    "bundle": [
+      {
+        "dir": "imperial/year_2/c/pintos",
+        "remote": "git@github.com:FreddieShoreditch/pintos_os"
+      }
+    ]
+  },
+  {
+    "name": "Imperial Year 3",
+    "bundle": [
+
+    ]
+  },
+  {
+    "name": "Imperial Year 4",
+    "bundle": [
+
+    ]
+  }
+]
