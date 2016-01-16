@@ -55,6 +55,7 @@
         "bundle": [
           {
             "name": "Year 1",
+            "dir": "year_1",
             "bundle": [
               {
                 "name": "C",
@@ -65,6 +66,24 @@
                     "dir": "arm11_emulator_assembler",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_c_arm11_project"
                   }
+                ]
+              },
+              {
+                "name": "Haskell",
+                "dir": "haskell",
+                "bundle": [
+                  {
+                    "name": "bdd",
+                    "dir": "bdd",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_bdd"
+                  }
+                ]
+              },
+              {
+                "name": "Java",
+                "dir": "java",
+                "bundle": [
+
                 ]
               }
             ]

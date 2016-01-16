@@ -40,15 +40,24 @@ def clone_repo(remote, item, dir, recursive, indent = 0, name = nil)
       print "\r\033[2K", "\t" * indent, "Fetching remote for:\t", name
       g.remotes.each(&:fetch)
       `git -C #{git_dir} submodule update --init >/dev/null 2>&1` if recursive
-      print "\r\033[2K", "\t" * indent, "Fetched:\t", name
+      commit = g.log[0]
+      hash = commit.to_s
+      hash = hash.length > 10 ? hash[0..9] : hash
+      message = (commit.message).split("\n")[0]
+      print "\r\033[2K", "\t" * indent, "Fetched:\t", name,
+            ' @ ', hash, ' - ', message
       puts
     elsif File.directory?(git_dir)
       print "\t" * indent, "Not a git repository, ignoring:\t", name
       puts
     else
       print "\t" * indent, "Cloning:\t", name
-      Git.clone(remote, item, path: dir)
-      print "\r\033[2K", "\t" * indent, "Cloned:\t", name
+      g = Git.clone(remote, item, path: dir)
+      commit = g.log[0]
+      hash = commit.to_s
+      hash = hash.length > 10 ? hash[0..9] : hash
+      print "\r\033[2K", "\t" * indent, "Cloned:\t", name,
+            ' @ ', hash, ' - ', message
       `git -C #{git_dir} submodule update --init` if recursive
       puts
     end
