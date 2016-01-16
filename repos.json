@@ -26,32 +26,65 @@
           {
             "name": "Year 2",
             "dir": "year_2",
-            "bundle": [{
-              "name": "c",
-              "dir": "c",
-              "bundle": [
-                {
-                  "dir": "pintos",
-                  "remote": "git@github.com:FreddieShoreditch/pintos_os"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Year 3",
-          "bundle": [
+            "bundle": [
+              {
+                "name": "c",
+                "dir": "c",
+                "bundle": [
+                  {
+                    "dir": "pintos",
+                    "remote": "git@github.com:FreddieShoreditch/pintos_os"
+                  }
+                ]
+              },
+              {
+                "name": "c++",
+                "dir": "cpp",
+                "bundle": [
+                  {
+                    "name": "enigma",
+                    "dir": "enigma",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_enigma"
+                  }
+                ]
+              },
+              {
+                "name": "wacc",
+                "dir": "java_wacc",
+                "bundle": [
+                  {
+                    "name": "compiler spec",
+                    "dir": "compiler_spec",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_wacc_compiler_spec"
+                  },
+                  {
+                    "name": "wacc examples",
+                    "dir": "wacc_examples",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_wacc_compiler"
+                  },
+                  {
+                    "name": "wacc compiler",
+                    "dir": "wacc_compiler",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_wacc_examples"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Year 3",
+            "bundle": [
 
-          ]
-        },
-        {
-          "name": "Year 4",
-          "bundle": [
+            ]
+          },
+          {
+            "name": "Year 4",
+            "bundle": [
 
-          ]
-        }
-      ]
-    }
-  ]
-}
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ]

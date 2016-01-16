@@ -31,15 +31,23 @@ end
 
 def clone_repo(remote, item, dir, indent = 0)
   git_dir = "#{dir}/#{item}"
-  if File.directory?(dir) && File.directory?("#{git_dir}/.git")
-    g = Git.open(git_dir)
-    print "\t" * indent, "Fetching remote for:\t", item, "\n"
-    g.remotes.each(&:fetch)
-  elsif File.directory?(git_dir)
-    print "\t" * indent, "Not a git repository, ignoring:\t", item, "\n"
-  else
-    Git.clone(remote, item, path: dir)
-    print "\t" * indent, "Cloned:\t", item, "\n"
+  begin
+    if File.directory?(dir) && File.directory?("#{git_dir}/.git")
+      print "\t" * indent, "Checking git repository:\t", item
+      g = Git.open(git_dir)
+      print "\r\033[2K", "\t" * indent, "Fetching remote for:\t", item
+      g.remotes.each(&:fetch)
+      print "\r\033[2K", "\t" * indent, "Fetched:\t", item, "\n"
+    elsif File.directory?(git_dir)
+      print "\t" * indent, "Not a git repository, ignoring:\t", item, "\n"
+    else
+      print "\t" * indent, "Cloning:\t", item
+      Git.clone(remote, item, path: dir)
+      print "\r\033[2K", "\t" * indent, "Cloned:\t", item, "\n"
+    end
+  rescue Git::GitExecuteError
+    print "\t" * indent, "Error (does the repo exist?):\t", item,
+          ' => ', remote, "\n"
   end
 end
 
