@@ -65,6 +65,16 @@
                     "name": "ARM11 Emulator/Assembler",
                     "dir": "arm11_emulator_assembler",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_c_arm11_project"
+                  },
+                  {
+                    "name": "C tutorial 1",
+                    "dir": "c_tutorial_1",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_c_tutorial_1"
+                  },
+                  {
+                    "name": "C tutorial 2",
+                    "dir": "c_tutorial_2",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_c_tutorial_2"
                   }
                 ]
               },
@@ -134,7 +144,71 @@
                 "name": "Java",
                 "dir": "java",
                 "bundle": [
-
+                  {
+                    "name": "Video Game and Tic Tac Toe",
+                    "dir": "videogameandtictactoe",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_videogameandtictactoe"
+                  },
+                  {
+                    "name": "Emergency Dialer",
+                    "dir": "emergencydialer",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_emergencydialer"
+                  },
+                  {
+                    "name": "Chancho",
+                    "dir": "chancho",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_chancho"
+                  },
+                  {
+                    "name": "Battleships",
+                    "dir": "battleships",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_battleships"
+                  },
+                  {
+                    "name": "ADT Huffman Encoding",
+                    "dir": "huffman_encoding",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_adthuffmanencoding"
+                  },
+                  {
+                    "name": "Discrete Event Simulation",
+                    "dir": "discreteeventsimulation",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_discreteeventsimulation"
+                  },
+                  {
+                    "name": "Spreadsheet",
+                    "dir": "spreadsheet",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_spreadsheet"
+                  },
+                  {
+                    "name": "Turtle Interpreter",
+                    "dir": "turtleinterpreter",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_turtleinterpreter"
+                  },
+                  {
+                    "name": "Rule 184",
+                    "dir": "rule184",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_rule184"
+                  },
+                  {
+                    "name": "Recursion",
+                    "dir": "recursion",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_recursion"
+                  },
+                  {
+                    "name": "Do not melt the Snowman",
+                    "dir": "donotmeltthesnowman",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_donotmeltthesnowman"
+                  },
+                  {
+                    "name": "Owari",
+                    "dir": "owari",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_owari"
+                  },
+                  {
+                    "name": "Loops and Arrays",
+                    "dir": "loopsandarrays",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_loopsandarrays"
+                  }
                 ]
               }
             ]
@@ -168,17 +242,17 @@
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_linkload"
                   },
                   {
-                    "name": "Tutorial 2",
+                    "name": "C++ Tutorial 2",
                     "dir": "tutorial_2",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_tutorial_2"
                   },
                   {
-                    "name": "Tutorial 1",
+                    "name": "C++ Tutorial 1",
                     "dir": "tutorial_1",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_tutorial_1"
                   },
                   {
-                    "name": "Tutorial 3",
+                    "name": "C++ Tutorial 3",
                     "dir": "tutorial_3",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_tutorial_3"
                   }
@@ -236,6 +310,17 @@
                     "name": "Code Generation for Function Calls (compilers)",
                     "dir": "code_gen_func_calls",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_haskell_codegenforfunctioncalls"
+                  }
+                ]
+              },
+              {
+                "name": "LaTeX",
+                "dir": "latex",
+                "bundle": [
+                  {
+                    "name": "Operational Semantics (CO 240)",
+                    "dir": "operational_semantics",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_latex_operationalsemantics"
                   }
                 ]
               }
