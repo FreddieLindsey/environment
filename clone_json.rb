@@ -4,30 +4,21 @@ require 'fileutils'
 require 'git'
 require 'JSON'
 
-@where = nil
-
 def process_bundle(b, dir_ = '', indent = 0)
   b.each do |repo|
     bundle = repo['bundle']
+
+    dir = dir_
+    dir += repo['dir'] if repo['dir']
+
     if bundle
       print "\t" * indent, "Synchronising bundle:\t", repo['name'], "\n"
-      if repo['dir']
-        dir = dir_
-        dir += repo['dir']
-      else
-        dir = dir_
-      end
       FileUtils.mkpath(dir) if dir != ''
       dir += '/' if dir[-1] != '/'
       process_bundle(bundle, dir, indent + 1)
     else
       remote = repo['remote']
-
-      dir = dir_
-      dir += @where + '/' if @where
-      dir += repo['dir']
       dir = dir.split('/')
-
       dir.delete('.')
 
       item = dir[-1]
