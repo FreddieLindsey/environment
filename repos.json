@@ -17,6 +17,17 @@
                 "remote": "git@github.com:FreddieShoreditch/scrabble_bot"
               }
             ]
+          },
+          {
+            "name": "Python",
+            "dir": "python",
+            "bundle": [
+              {
+                "name": "PDF Splitter",
+                "dir": "pdf-splitter",
+                "remote": "git@github.com:FreddieShoreditch/pdf-splitter"
+              }
+            ]
           }
         ]
       },
@@ -31,7 +42,7 @@
         "name": "_Unmanaged/Archive",
         "dir": "_unmanaged-archive",
         "bundle": [
-          
+
         ]
       },
       {

@@ -87,4 +87,4 @@ alias zsource="source ~/.zshrc"
 ### USER ###
 
 # Source zprofile
-source ~/.setup_environment/files/.zprofile
+source ~/.zprofile
