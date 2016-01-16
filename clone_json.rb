@@ -24,12 +24,12 @@ def process_bundle(b, dir_ = '', indent = 0)
       item = dir[-1]
       dir = dir[0..dir.length - 2].join('/')
 
-      clone_repo(remote, item, dir, indent)
+      clone_repo(remote, item, dir, repo['recursive'], indent)
     end
   end
 end
 
-def clone_repo(remote, item, dir, indent = 0)
+def clone_repo(remote, item, dir, recursive, indent = 0)
   git_dir = "#{dir}/#{item}"
   begin
     if File.directory?(dir) && File.directory?("#{git_dir}/.git")
@@ -37,13 +37,18 @@ def clone_repo(remote, item, dir, indent = 0)
       g = Git.open(git_dir)
       print "\r\033[2K", "\t" * indent, "Fetching remote for:\t", item
       g.remotes.each(&:fetch)
-      print "\r\033[2K", "\t" * indent, "Fetched:\t", item, "\n"
+      `git -C #{git_dir} submodule update --init >/dev/null 2>&1` if recursive
+      print "\r\033[2K", "\t" * indent, "Fetched:\t", item
+      puts
     elsif File.directory?(git_dir)
-      print "\t" * indent, "Not a git repository, ignoring:\t", item, "\n"
+      print "\t" * indent, "Not a git repository, ignoring:\t", item
+      puts
     else
       print "\t" * indent, "Cloning:\t", item
       Git.clone(remote, item, path: dir)
-      print "\r\033[2K", "\t" * indent, "Cloned:\t", item, "\n"
+      print "\r\033[2K", "\t" * indent, "Cloned:\t", item
+      `git -C #{git_dir} submodule update --init` if recursive
+      puts
     end
   rescue Git::GitExecuteError
     print "\t" * indent, "Error (does the repo exist?):\t", item,

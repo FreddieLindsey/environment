@@ -58,15 +58,23 @@
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_wacc_compiler_spec"
                   },
                   {
-                    "name": "wacc examples",
-                    "dir": "wacc_examples",
+                    "name": "wacc compiler",
+                    "dir": "wacc_compiler",
+                    "recursive": true,
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_wacc_compiler"
                   },
                   {
-                    "name": "wacc compiler",
-                    "dir": "wacc_compiler",
+                    "name": "wacc examples",
+                    "dir": "wacc_examples",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_wacc_examples"
                   }
+                ]
+              },
+              {
+                "name": "Java",
+                "dir": "java",
+                "bundle": [
+
                 ]
               }
             ]
