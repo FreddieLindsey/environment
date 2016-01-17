@@ -210,6 +210,22 @@
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_loopsandarrays"
                   }
                 ]
+              },
+              {
+                "name": "HTML",
+                "dir": "html",
+                "bundle": [
+                  {
+                    "name": "Topics (CO163)",
+                    "dir": "co163_topics",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_html_co163_topics"
+                  },
+                  {
+                    "name": "Topics Research (CO163)",
+                    "dir": "co163_topics_research",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_html_co163_topics_research"
+                  }
+                ]
               }
             ]
           },
@@ -288,6 +304,46 @@
                     "name": "Concurrency Coursework 1",
                     "dir": "concurrency_cw_1",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_concurrency_cw_1"
+                  },
+                  {
+                    "name": "tdd",
+                    "dir": "tdd",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_tdd"
+                  },
+                  {
+                    "name": "calculator",
+                    "dir": "calculator",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_calculator"
+                  },
+                  {
+                    "name": "weather",
+                    "dir": "weather",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_weather"
+                  },
+                  {
+                    "name": "creation",
+                    "dir": "creation",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_creation"
+                  },
+                  {
+                    "name": "mappablelist",
+                    "dir": "mappablelist",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_mappablelist"
+                  },
+                  {
+                    "name": "camera",
+                    "dir": "camera",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_camera"
+                  },
+                  {
+                    "name": "recentlyusedlist",
+                    "dir": "recentlyusedlist",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_recentlyusedlist"
+                  },
+                  {
+                    "name": "reuse",
+                    "dir": "reuse",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_reuse"
                   }
                 ]
               },

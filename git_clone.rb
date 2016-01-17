@@ -30,6 +30,14 @@ def process_bundle(b, dir_ = '', indent = 0)
   end
 end
 
+def head_commit(repo)
+  commit = repo.log[0]
+  hash = commit.to_s
+  hash = hash.length > 10 ? hash[0..9] : hash
+  message = (commit.message).split("\n")[0]
+  "#{hash} - #{message}"
+end
+
 def clone_repo(remote, item, dir, recursive, indent = 0, name = nil)
   name = item unless name
   git_dir = "#{dir}/#{item}"
@@ -40,12 +48,8 @@ def clone_repo(remote, item, dir, recursive, indent = 0, name = nil)
       print "\r\033[2K", "\t" * indent, "Fetching remote for:\t", name
       g.remotes.each(&:fetch)
       `git -C #{git_dir} submodule update --init >/dev/null 2>&1` if recursive
-      commit = g.log[0]
-      hash = commit.to_s
-      hash = hash.length > 10 ? hash[0..9] : hash
-      message = (commit.message).split("\n")[0]
       print "\r\033[2K", "\t" * indent, "Fetched:\t", name,
-            ' @ ', hash, ' - ', message
+            ' @ ', head_commit(g)
       puts
     elsif File.directory?(git_dir)
       print "\t" * indent, "Not a git repository, ignoring:\t", name
@@ -53,11 +57,8 @@ def clone_repo(remote, item, dir, recursive, indent = 0, name = nil)
     else
       print "\t" * indent, "Cloning:\t", name
       g = Git.clone(remote, item, path: dir)
-      commit = g.log[0]
-      hash = commit.to_s
-      hash = hash.length > 10 ? hash[0..9] : hash
       print "\r\033[2K", "\t" * indent, "Cloned:\t\t", name,
-            ' @ ', hash, ' - ', message
+            ' @ ', head_commit(g)
       `git -C #{git_dir} submodule update --init` if recursive
       puts
     end
