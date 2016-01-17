@@ -145,6 +145,11 @@
                 "dir": "java",
                 "bundle": [
                   {
+                    "name": "Java ADT Algorithms",
+                    "dir": "adt_algorithms",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_adt_algorithms"
+                  },
+                  {
                     "name": "Video Game and Tic Tac Toe",
                     "dir": "videogameandtictactoe",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_videogameandtictactoe"
