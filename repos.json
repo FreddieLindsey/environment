@@ -28,6 +28,28 @@
                 "remote": "git@github.com:FreddieShoreditch/pdf-splitter"
               }
             ]
+          },
+          {
+            "name": "Jekyll",
+            "dir": "jekyll",
+            "bundle": [
+              {
+                "name": "freddie.codes",
+                "dir": "freddie.codes",
+                "remote": "git@bitbucket.org:FreddieALindsey/freddie.codes"
+              }
+            ]
+          },
+          {
+            "name": "Miscellaneous",
+            "dir": "misc",
+            "bundle": [
+              {
+                "name": "HackerRank / Interview practice",
+                "dir": "hackerrank",
+                "remote": "git@bitbucket.org:FreddieALindsey/hackerrank"
+              }
+            ]
           }
         ]
       },
@@ -39,6 +61,11 @@
             "name": "The Tea Cosy Club",
             "dir": "tea_cosy_club",
             "remote": "git@bitbucket.org:DaisyACooney/the_tea_cosy_club"
+          },
+          {
+            "name": "The Funding Source",
+            "dir": "thefundingsource",
+            "remote": "git@bitbucket.org:FreddieALindsey/thefundingsource"
           }
         ]
       },
@@ -46,7 +73,16 @@
         "name": "_Unmanaged/Archive",
         "dir": "_unmanaged-archive",
         "bundle": [
-
+          {
+            "name": "freddielindsey.me [DEPRECATED]",
+            "dir": "freddielindsey.me",
+            "remote": "git@bitbucket.org:FreddieALindsey/freddielindsey_me"
+          },
+          {
+            "name": "Personal Website [DEPRECATED]",
+            "dir": "personal_website",
+            "remote": "git@bitbucket.org:FreddieALindsey/personal_website-archive"
+          }
         ]
       },
       {
