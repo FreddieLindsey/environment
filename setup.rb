@@ -6,7 +6,7 @@ load_dir = File.dirname(
 
 require "#{load_dir}/git_clone"
 
-require 'JSON'
+require 'json'
 
 # Main
 

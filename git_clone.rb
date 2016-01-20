@@ -4,6 +4,7 @@ require 'fileutils'
 require 'git'
 
 def process_bundle(b, dir_ = '', indent = 0)
+  dir_ = "#{ENV['HOME']}/" if dir_ == ''
   b.sort! { |a_, b_| a_['name'] <=> b_['name'] }
 
   b.each do |repo|
