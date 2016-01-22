@@ -26,6 +26,21 @@
                 "name": "PDF Splitter",
                 "dir": "pdf-splitter",
                 "remote": "git@github.com:FreddieShoreditch/pdf-splitter"
+              },
+              {
+                "name": "Media transcoder",
+                "dir": "transcoder",
+                "remote": "git@github.com:FreddieShoreditch/mediatranscoder"
+              },
+              {
+                "name": "Media transcoder",
+                "dir": "transcoder",
+                "remote": "git@github.com:FreddieShoreditch/image_folder_organiser"
+              },
+              {
+                "name": "Evernote clone to folder",
+                "dir": "evernote_clone",
+                "remote": "git@github.com:FreddieShoreditch/evernote_clone_to_folder"
               }
             ]
           },
@@ -48,6 +63,38 @@
                 "name": "HackerRank / Interview practice",
                 "dir": "hackerrank",
                 "remote": "git@bitbucket.org:FreddieALindsey/hackerrank"
+              },
+              {
+                "name": "Random crap",
+                "dir": "random",
+                "remote": "git@bitbucket.org:FreddieALindsey/random_crap"
+              }
+            ]
+          },
+          {
+            "name": "AWS",
+            "dir": "aws",
+            "bundle": [
+              {
+                "name": "Sample Elastic Beanstalk Application",
+                "dir": "sample_eb_app",
+                "remote": "git@github.com:FreddieShoreditch/sampleelasticbeanstalkapp"
+              }
+            ]
+          },
+          {
+            "name": "Node.js",
+            "dir": "node",
+            "bundle": [
+              {
+                "name": "Pragmatica Tax Generator",
+                "dir": "pragmatica",
+                "remote": "git@github.com:FreddieShoreditch/pragmatica"
+              },
+              {
+                "name": "ID checker",
+                "dir": "id_checker",
+                "remote": "git@github.com:FreddieShoreditch/id_checker"
               }
             ]
           }
@@ -82,6 +129,69 @@
             "name": "Personal Website [DEPRECATED]",
             "dir": "personal_website",
             "remote": "git@bitbucket.org:FreddieALindsey/personal_website-archive"
+          },
+          {
+            "name": "Tax Return Generator (Python)",
+            "dir": "tax_return_generator_python",
+            "remote": "git@bitbucket.org:FreddieALindsey/tax-return-generator-archive-1"
+          },
+          {
+            "name": "Pragmatica [DEPRECATED]",
+            "dir": "pragmatica_archive",
+            "remote": "git@bitbucket.org:FreddieALindsey/pragmatica-archive"
+          },
+          {
+            "name": "Bash Media Server Scripts",
+            "dir": "media_server_scripts_bash",
+            "remote": "git@github.com:FreddieShoreditch/media_server_scripts"
+          }
+        ]
+      },
+      {
+        "name": "Hackathons",
+        "dir": "hackathon",
+        "bundle": [
+          {
+            "name": "Precisely Travel Planner (IC Hack '15)",
+            "dir": "precisely",
+            "remote": "git@github.com:FreddieShoreditch/precisely"
+          },
+          {
+            "name": "Clutch (Hack the Planet '15)",
+            "dir": "clutch",
+            "remote": "git@github.com:elenimijalis/clutch"
+          }
+        ]
+      },
+      {
+        "name": "Employment",
+        "dir": "employment",
+        "bundle": [
+          {
+            "name": "Red Badger",
+            "dir": "red_badger",
+            "bundle": [
+              {
+                "name": "Phonebox.io",
+                "dir": "phonebox",
+                "remote": "git@bitbucket.org:FreddieALindsey/phonebox"
+              },
+              {
+                "name": "Badger Academy",
+                "dir": "badger_academy",
+                "remote": "git@bitbucket.org:FreddieALindsey/red_badger_badger_academy"
+              },
+              {
+                "name": "Coding Challenge",
+                "dir": "martian_programming_problem",
+                "remote": "git@github.com:FreddieShoreditch/red_badger_programming_problem"
+              },
+              {
+                "name": "Read It",
+                "dir": "readit",
+                "remote": "git@github.com:FreddieShoreditch/read--it"
+              }
+            ]
           }
         ]
       },
