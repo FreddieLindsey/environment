@@ -45,6 +45,17 @@
             ]
           },
           {
+            "name": "Node.js",
+            "dir": "node",
+            "bundle": [
+              {
+                "name": "Node Boilerplate",
+                "dir": "node-boilerplate",
+                "remote": "git@github.com:FreddieShoreditch/node-boilerplate"
+              }
+            ]
+          },
+          {
             "name": "Jekyll",
             "dir": "jekyll",
             "bundle": [
