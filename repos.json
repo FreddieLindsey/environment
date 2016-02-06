@@ -50,8 +50,8 @@
             "bundle": [
               {
                 "name": "Node Boilerplate",
-                "dir": "node-boilerplate",
-                "remote": "git@github.com:FreddieShoreditch/node-boilerplate"
+                "dir": "nodejs-boilerplate",
+                "remote": "git@github.com:FreddieShoreditch/nodejs-boilerplate"
               }
             ]
           },
