@@ -521,6 +521,17 @@
                 ]
               },
               {
+                "name": "Python",
+                "dir": "python",
+                "bundle": [
+                  {
+                    "name": "Algorithms coursework",
+                    "dir": "algo202-cw1"
+                    "remote": "git@gitlab.doc.ic.ac.uk:lab1516_spring/algorithmscoursework_28.git"
+                  }
+                ]
+              },
+              {
                 "name": "Haskell",
                 "dir": "haskell",
                 "bundle": [
