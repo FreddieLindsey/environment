@@ -78,6 +78,17 @@
             ]
           },
           {
+            "name": "Node.js",
+            "dir": "node",
+            "bundle": [
+              {
+                "name": "Node Boilerplate",
+                "dir": "node-boilerplate",
+                "remote": "git@github.com:FreddieShoreditch/node-boilerplate"
+              }
+            ]
+          },
+          {
             "name": "Miscellaneous",
             "dir": "misc",
             "bundle": [
@@ -599,6 +610,17 @@
             "bundle": [
 
             ]
+          }
+        ]
+      },
+      {
+        "name": "Open source",
+        "dir": "open_source",
+        "bundle": [
+          {
+            "name": "Slogger for Day One",
+            "dir": "slogger",
+            "remote": "git@github.com:ttscoff/Slogger"
           }
         ]
       }
