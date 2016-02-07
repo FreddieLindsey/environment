@@ -13,4 +13,8 @@ require 'json'
 file = File.new("#{ENV['HOME']}/.setup_environment/repos.json", 'r')
 file_config = JSON.parse(file.read)
 
-process_bundle(file_config)
+options = {}
+
+options['update-existing'] = true if ARGV.include?('-u')
+
+process_bundle(file_config, options)

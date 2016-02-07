@@ -400,7 +400,8 @@
                 "dir": "c",
                 "bundle": [
                   {
-                    "dir": "Pintos Operating System",
+                    "name": "Pintos Operating System",
+                    "dir": "pintos",
                     "remote": "git@github.com:FreddieShoreditch/pintos_os"
                   }
                 ]
@@ -526,7 +527,7 @@
                 "bundle": [
                   {
                     "name": "Algorithms coursework",
-                    "dir": "algo202-cw1"
+                    "dir": "algo202-cw1",
                     "remote": "git@gitlab.doc.ic.ac.uk:lab1516_spring/algorithmscoursework_28.git"
                   }
                 ]
