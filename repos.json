@@ -518,6 +518,11 @@
                     "name": "Intro to Prolog",
                     "dir": "intro_to_prolog",
                     "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_intro_to_prolog"
+                  },
+                  {
+                    "name": "War of Life",
+                    "dir": "war_of_life",
+                    "remote": "git@github.com:FreddieShoreditch/ic_year_2_prolog_war_of_life"
                   }
                 ]
               },
