@@ -4,6 +4,17 @@
     "dir": "Dev",
     "bundle": [
       {
+        "name": "Open Source",
+        "dir": "open_source",
+        "bundle": [
+          {
+            "name": "Slogger",
+            "dir": "slogger_freddieshoreditch",
+            "remote": "git@github.com:FreddieShoreditch/Slogger.git"
+          }
+        ]
+      },
+      {
         "name": "Personal",
         "dir": "personal",
         "bundle": [
