@@ -538,6 +538,17 @@
                 ]
               },
               {
+                "name": "LaTeX",
+                "dir": "latex",
+                "bundle": [
+                  {
+                    "name": "CO 212 Networks and Communications CW1",
+                    "dir": "212_networks_cw1",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_212_networks_cw"
+                  }
+                ]
+              },
+              {
                 "name": "Python",
                 "dir": "python",
                 "bundle": [
