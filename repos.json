@@ -553,9 +553,14 @@
                 "dir": "python",
                 "bundle": [
                   {
-                    "name": "Algorithms coursework",
+                    "name": "Algorithms coursework 1",
                     "dir": "algo202-cw1",
-                    "remote": "git@gitlab.doc.ic.ac.uk:lab1516_spring/algorithmscoursework_28.git"
+                    "remote": "git@github.com:FreddieShoreditch/ic_year_2_python_algorithms_cw1.git"
+                  },
+                  {
+                    "name": "Algorithms coursework 2",
+                    "dir": "algo202-cw2",
+                    "remote": "git@github.com:FreddieShoreditch/ic_year_2_python_algorithms_cw2.git"
                   }
                 ]
               },
