@@ -88,8 +88,13 @@
             "bundle": [
               {
                 "name": "Rails Sample API",
-                "dir": "rails-sample-api",
+                "dir": "rails-sample-app",
                 "remote": "git@github.com:FreddieShoreditch/rails-sample-app"
+              },
+              {
+                "name": "Rails Sample API",
+                "dir": "rails-server-api",
+                "remote": "git@github.com:FreddieShoreditch/rails-server-api"
               }
             ]
           },
