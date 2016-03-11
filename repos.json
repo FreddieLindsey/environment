@@ -11,6 +11,11 @@
             "name": "Slogger",
             "dir": "slogger_freddieshoreditch",
             "remote": "git@github.com:FreddieShoreditch/Slogger.git"
+          },
+          {
+            "name": "Slogger",
+            "dir": "slogger",
+            "remote": "git@github.com:ttscoff/Slogger.git"
           }
         ]
       },
@@ -78,13 +83,13 @@
             ]
           },
           {
-            "name": "Node.js",
-            "dir": "node",
+            "name": "Ruby",
+            "dir": "ruby",
             "bundle": [
               {
-                "name": "Node Boilerplate",
-                "dir": "node-boilerplate",
-                "remote": "git@github.com:FreddieShoreditch/node-boilerplate"
+                "name": "Rails Sample API",
+                "dir": "rails-sample-api",
+                "remote": "git@github.com:FreddieShoreditch/rails-sample-app"
               }
             ]
           },
