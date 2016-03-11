@@ -95,6 +95,11 @@
                 "name": "Rails Sample API",
                 "dir": "rails-server-api",
                 "remote": "git@github.com:FreddieShoreditch/rails-server-api"
+              },
+              {
+                "name": "Crime Reporter API",
+                "dir": "crime-reporter-api",
+                "remote": "git@github.com:FreddieShoreditch/crime-reporter-api"
               }
             ]
           },
