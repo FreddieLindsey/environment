@@ -579,14 +579,19 @@
                 "dir": "python",
                 "bundle": [
                   {
-                    "name": "Algorithms coursework 1",
+                    "name": "Algorithms Coursework 1",
                     "dir": "algo202-cw1",
                     "remote": "git@github.com:FreddieShoreditch/ic_year_2_python_algorithms_cw1.git"
                   },
                   {
-                    "name": "Algorithms coursework 2",
+                    "name": "Algorithms Coursework 2",
                     "dir": "algo202-cw2",
                     "remote": "git@github.com:FreddieShoreditch/ic_year_2_python_algorithms_cw2.git"
+                  },
+                  {
+                    "name": "C233 Computational Techniques Coursework 2",
+                    "dir": "233-comptechniques-cw2",
+                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_python_computational_techniques_2.git"
                   }
                 ]
               },
