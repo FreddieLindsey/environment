@@ -10,7 +10,7 @@
           {
             "name": "Slogger",
             "dir": "slogger_freddieshoreditch",
-            "remote": "git@github.com:FreddieShoreditch/Slogger.git"
+            "remote": "git@github.com:FreddieLindsey/Slogger.git"
           },
           {
             "name": "Slogger",
@@ -30,7 +30,7 @@
               {
                 "name": "Scrabble Bot!",
                 "dir": "scrabble_bot",
-                "remote": "git@github.com:FreddieShoreditch/scrabble_bot"
+                "remote": "git@github.com:FreddieLindsey/scrabble_bot"
               }
             ]
           },
@@ -41,22 +41,22 @@
               {
                 "name": "PDF Splitter",
                 "dir": "pdf-splitter",
-                "remote": "git@github.com:FreddieShoreditch/pdf-splitter"
+                "remote": "git@github.com:FreddieLindsey/pdf-splitter"
               },
               {
                 "name": "Media transcoder",
                 "dir": "transcoder",
-                "remote": "git@github.com:FreddieShoreditch/mediatranscoder"
+                "remote": "git@github.com:FreddieLindsey/mediatranscoder"
               },
               {
                 "name": "Media transcoder",
                 "dir": "transcoder",
-                "remote": "git@github.com:FreddieShoreditch/image_folder_organiser"
+                "remote": "git@github.com:FreddieLindsey/image_folder_organiser"
               },
               {
                 "name": "Evernote clone to folder",
                 "dir": "evernote_clone",
-                "remote": "git@github.com:FreddieShoreditch/evernote_clone_to_folder"
+                "remote": "git@github.com:FreddieLindsey/evernote_clone_to_folder"
               }
             ]
           },
@@ -67,7 +67,7 @@
               {
                 "name": "Node Boilerplate",
                 "dir": "nodejs-boilerplate",
-                "remote": "git@github.com:FreddieShoreditch/nodejs-boilerplate"
+                "remote": "git@github.com:FreddieLindsey/nodejs-boilerplate"
               }
             ]
           },
@@ -78,7 +78,7 @@
               {
                 "name": "freddie.codes",
                 "dir": "freddie.codes",
-                "remote": "git@bitbucket.org:FreddieALindsey/freddie.codes"
+                "remote": "git@github.com:FreddieLindsey/freddie.codes"
               }
             ]
           },
@@ -89,17 +89,17 @@
               {
                 "name": "Rails Sample API",
                 "dir": "rails-sample-app",
-                "remote": "git@github.com:FreddieShoreditch/rails-sample-app"
+                "remote": "git@github.com:FreddieLindsey/rails-sample-app"
               },
               {
                 "name": "Rails Sample API",
                 "dir": "rails-server-api",
-                "remote": "git@github.com:FreddieShoreditch/rails-server-api"
+                "remote": "git@github.com:FreddieLindsey/rails-server-api"
               },
               {
                 "name": "Crime Reporter API",
                 "dir": "crime-reporter-api",
-                "remote": "git@github.com:FreddieShoreditch/crime-reporter-api"
+                "remote": "git@github.com:FreddieLindsey/crime-reporter-api"
               }
             ]
           },
@@ -110,12 +110,12 @@
               {
                 "name": "HackerRank / Interview practice",
                 "dir": "hackerrank",
-                "remote": "git@bitbucket.org:FreddieALindsey/hackerrank"
+                "remote": "git@github.com:FreddieLindsey/hackerrank"
               },
               {
                 "name": "Random crap",
                 "dir": "random",
-                "remote": "git@bitbucket.org:FreddieALindsey/random_crap"
+                "remote": "git@github.com:FreddieLindsey/random_crap"
               }
             ]
           },
@@ -126,7 +126,7 @@
               {
                 "name": "Sample Elastic Beanstalk Application",
                 "dir": "sample_eb_app",
-                "remote": "git@github.com:FreddieShoreditch/sampleelasticbeanstalkapp"
+                "remote": "git@github.com:FreddieLindsey/sampleelasticbeanstalkapp"
               }
             ]
           },
@@ -137,12 +137,12 @@
               {
                 "name": "Pragmatica Tax Generator",
                 "dir": "pragmatica",
-                "remote": "git@github.com:FreddieShoreditch/pragmatica"
+                "remote": "git@github.com:FreddieLindsey/pragmatica"
               },
               {
                 "name": "ID checker",
                 "dir": "id_checker",
-                "remote": "git@github.com:FreddieShoreditch/id_checker"
+                "remote": "git@github.com:FreddieLindsey/id_checker"
               }
             ]
           }
@@ -160,7 +160,7 @@
           {
             "name": "The Funding Source",
             "dir": "thefundingsource",
-            "remote": "git@bitbucket.org:FreddieALindsey/thefundingsource"
+            "remote": "git@github.com:FreddieLindsey/thefundingsource"
           }
         ]
       },
@@ -171,27 +171,27 @@
           {
             "name": "freddielindsey.me [DEPRECATED]",
             "dir": "freddielindsey.me",
-            "remote": "git@bitbucket.org:FreddieALindsey/freddielindsey_me"
+            "remote": "git@github.com:FreddieLindsey/freddielindsey_me"
           },
           {
             "name": "Personal Website [DEPRECATED]",
             "dir": "personal_website",
-            "remote": "git@bitbucket.org:FreddieALindsey/personal_website-archive"
+            "remote": "git@github.com:FreddieLindsey/personal_website-archive"
           },
           {
             "name": "Tax Return Generator (Python)",
             "dir": "tax_return_generator_python",
-            "remote": "git@bitbucket.org:FreddieALindsey/tax-return-generator-archive-1"
+            "remote": "git@github.com:FreddieLindsey/tax-return-generator-archive-1"
           },
           {
             "name": "Pragmatica [DEPRECATED]",
             "dir": "pragmatica_archive",
-            "remote": "git@bitbucket.org:FreddieALindsey/pragmatica-archive"
+            "remote": "git@github.com:FreddieLindsey/pragmatica-archive"
           },
           {
             "name": "Bash Media Server Scripts",
             "dir": "media_server_scripts_bash",
-            "remote": "git@github.com:FreddieShoreditch/media_server_scripts"
+            "remote": "git@github.com:FreddieLindsey/media_server_scripts"
           }
         ]
       },
@@ -202,7 +202,7 @@
           {
             "name": "Precisely Travel Planner (IC Hack '15)",
             "dir": "precisely",
-            "remote": "git@github.com:FreddieShoreditch/precisely"
+            "remote": "git@github.com:FreddieLindsey/precisely"
           },
           {
             "name": "Clutch (Hack the Planet '15)",
@@ -222,22 +222,22 @@
               {
                 "name": "Phonebox.io",
                 "dir": "phonebox",
-                "remote": "git@bitbucket.org:FreddieALindsey/phonebox"
+                "remote": "git@github.com:FreddieLindsey/phonebox"
               },
               {
                 "name": "Badger Academy",
                 "dir": "badger_academy",
-                "remote": "git@bitbucket.org:FreddieALindsey/red_badger_badger_academy"
+                "remote": "git@github.com:FreddieLindsey/red_badger_badger_academy"
               },
               {
                 "name": "Coding Challenge",
                 "dir": "martian_programming_problem",
-                "remote": "git@github.com:FreddieShoreditch/red_badger_programming_problem"
+                "remote": "git@github.com:FreddieLindsey/red_badger_programming_problem"
               },
               {
                 "name": "Read It",
                 "dir": "readit",
-                "remote": "git@github.com:FreddieShoreditch/read--it"
+                "remote": "git@github.com:FreddieLindsey/read--it"
               }
             ]
           }
@@ -258,17 +258,17 @@
                   {
                     "name": "ARM11 Emulator/Assembler",
                     "dir": "arm11_emulator_assembler",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_c_arm11_project"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_c_arm11_project"
                   },
                   {
                     "name": "C tutorial 1",
                     "dir": "c_tutorial_1",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_c_tutorial_1"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_c_tutorial_1"
                   },
                   {
                     "name": "C tutorial 2",
                     "dir": "c_tutorial_2",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_c_tutorial_2"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_c_tutorial_2"
                   }
                 ]
               },
@@ -279,47 +279,47 @@
                   {
                     "name": "Ex 1 - BDD",
                     "dir": "bdd",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_bdd"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_haskell_bdd"
                   },
                   {
                     "name": "Ex 2 - Calculus",
                     "dir": "calculus",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_calculus"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_haskell_calculus"
                   },
                   {
                     "name": "Ex 3 - Macro Processor",
                     "dir": "macro_processor",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_macroprocessor"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_haskell_macroprocessor"
                   },
                   {
                     "name": "Ex 4 - L Systems",
                     "dir": "lsystems",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_lsystems"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_haskell_lsystems"
                   },
                   {
                     "name": "Ex 5 - Radix Trees",
                     "dir": "radixtrees",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_radixtrees"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_haskell_radixtrees"
                   },
                   {
                     "name": "Practice Test - Optimal Scheduling",
                     "dir": "_practice_optimal_scheduling",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_practice_optimalscheduling"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_haskell_practice_optimalscheduling"
                   },
                   {
                     "name": "Ex 6 - Parser",
                     "dir": "parser",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_parser"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_haskell_parser"
                   },
                   {
                     "name": "Ex 7 - Quadratic",
                     "dir": "quadratic",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_quadratic"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_haskell_quadratic"
                   },
                   {
                     "name": "Ex 8 - Recursive",
                     "dir": "recursive",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_haskell_recursive"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_haskell_recursive"
                   }
                 ]
               },
@@ -330,7 +330,7 @@
                   {
                     "name": "CO112 Dlock",
                     "dir": "co112_dlock",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_co112_dlock"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_co112_dlock"
                   }
                 ]
               },
@@ -341,72 +341,72 @@
                   {
                     "name": "Java ADT Algorithms",
                     "dir": "adt_algorithms",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_adt_algorithms"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_adt_algorithms"
                   },
                   {
                     "name": "Video Game and Tic Tac Toe",
                     "dir": "videogameandtictactoe",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_videogameandtictactoe"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_videogameandtictactoe"
                   },
                   {
                     "name": "Emergency Dialer",
                     "dir": "emergencydialer",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_emergencydialer"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_emergencydialer"
                   },
                   {
                     "name": "Chancho",
                     "dir": "chancho",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_chancho"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_chancho"
                   },
                   {
                     "name": "Battleships",
                     "dir": "battleships",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_battleships"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_battleships"
                   },
                   {
                     "name": "ADT Huffman Encoding",
                     "dir": "huffman_encoding",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_adthuffmanencoding"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_adthuffmanencoding"
                   },
                   {
                     "name": "Discrete Event Simulation",
                     "dir": "discreteeventsimulation",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_discreteeventsimulation"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_discreteeventsimulation"
                   },
                   {
                     "name": "Spreadsheet",
                     "dir": "spreadsheet",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_spreadsheet"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_spreadsheet"
                   },
                   {
                     "name": "Turtle Interpreter",
                     "dir": "turtleinterpreter",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_turtleinterpreter"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_turtleinterpreter"
                   },
                   {
                     "name": "Rule 184",
                     "dir": "rule184",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_rule184"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_rule184"
                   },
                   {
                     "name": "Recursion",
                     "dir": "recursion",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_recursion"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_recursion"
                   },
                   {
                     "name": "Do not melt the Snowman",
                     "dir": "donotmeltthesnowman",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_donotmeltthesnowman"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_donotmeltthesnowman"
                   },
                   {
                     "name": "Owari",
                     "dir": "owari",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_owari"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_owari"
                   },
                   {
                     "name": "Loops and Arrays",
                     "dir": "loopsandarrays",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_java_loopsandarrays"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_java_loopsandarrays"
                   }
                 ]
               },
@@ -417,12 +417,12 @@
                   {
                     "name": "Topics (CO163)",
                     "dir": "co163_topics",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_html_co163_topics"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_html_co163_topics"
                   },
                   {
                     "name": "Topics Research (CO163)",
                     "dir": "co163_topics_research",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_1_html_co163_topics_research"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_1_html_co163_topics_research"
                   }
                 ]
               }
@@ -439,7 +439,7 @@
                   {
                     "name": "Pintos Operating System",
                     "dir": "pintos",
-                    "remote": "git@github.com:FreddieShoreditch/pintos_os"
+                    "remote": "git@github.com:FreddieLindsey/pintos_os"
                   }
                 ]
               },
@@ -450,27 +450,27 @@
                   {
                     "name": "Enigma",
                     "dir": "enigma",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_enigma"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_cpp_enigma"
                   },
                   {
                     "name": "LinkLoad",
                     "dir": "linkload",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_linkload"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_cpp_linkload"
                   },
                   {
                     "name": "C++ Tutorial 2",
                     "dir": "tutorial_2",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_tutorial_2"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_cpp_tutorial_2"
                   },
                   {
                     "name": "C++ Tutorial 1",
                     "dir": "tutorial_1",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_tutorial_1"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_cpp_tutorial_1"
                   },
                   {
                     "name": "C++ Tutorial 3",
                     "dir": "tutorial_3",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_cpp_tutorial_3"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_cpp_tutorial_3"
                   }
                 ]
               },
@@ -481,18 +481,18 @@
                   {
                     "name": "compiler spec",
                     "dir": "compiler_spec",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_wacc_compiler_spec"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_wacc_compiler_spec"
                   },
                   {
                     "name": "wacc compiler",
                     "dir": "wacc_compiler",
                     "recursive": true,
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_wacc_compiler"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_wacc_compiler"
                   },
                   {
                     "name": "wacc examples",
                     "dir": "wacc_examples",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_wacc_examples"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_wacc_examples"
                   }
                 ]
               },
@@ -503,47 +503,47 @@
                   {
                     "name": "Concurrency Coursework 1",
                     "dir": "concurrency_cw_1",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_concurrency_cw_1"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_java_concurrency_cw_1"
                   },
                   {
                     "name": "tdd",
                     "dir": "tdd",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_tdd"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_java_se_tdd"
                   },
                   {
                     "name": "calculator",
                     "dir": "calculator",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_calculator"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_java_se_calculator"
                   },
                   {
                     "name": "weather",
                     "dir": "weather",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_weather"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_java_se_weather"
                   },
                   {
                     "name": "creation",
                     "dir": "creation",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_creation"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_java_se_creation"
                   },
                   {
                     "name": "mappablelist",
                     "dir": "mappablelist",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_mappablelist"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_java_se_mappablelist"
                   },
                   {
                     "name": "camera",
                     "dir": "camera",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_camera"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_java_se_camera"
                   },
                   {
                     "name": "recentlyusedlist",
                     "dir": "recentlyusedlist",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_recentlyusedlist"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_java_se_recentlyusedlist"
                   },
                   {
                     "name": "reuse",
                     "dir": "reuse",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_java_se_reuse"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_java_se_reuse"
                   }
                 ]
               },
@@ -554,12 +554,12 @@
                   {
                     "name": "Intro to Prolog",
                     "dir": "intro_to_prolog",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_intro_to_prolog"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_intro_to_prolog"
                   },
                   {
                     "name": "War of Life",
                     "dir": "war_of_life",
-                    "remote": "git@github.com:FreddieShoreditch/ic_year_2_prolog_war_of_life"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_prolog_war_of_life"
                   }
                 ]
               },
@@ -570,7 +570,7 @@
                   {
                     "name": "CO 212 Networks and Communications CW1",
                     "dir": "212_networks_cw1",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_212_networks_cw"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_212_networks_cw"
                   }
                 ]
               },
@@ -581,17 +581,17 @@
                   {
                     "name": "Algorithms Coursework 1",
                     "dir": "algo202-cw1",
-                    "remote": "git@github.com:FreddieShoreditch/ic_year_2_python_algorithms_cw1.git"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_python_algorithms_cw1.git"
                   },
                   {
                     "name": "Algorithms Coursework 2",
                     "dir": "algo202-cw2",
-                    "remote": "git@github.com:FreddieShoreditch/ic_year_2_python_algorithms_cw2.git"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_python_algorithms_cw2.git"
                   },
                   {
                     "name": "C233 Computational Techniques Coursework 2",
                     "dir": "233-comptechniques-cw2",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_python_computational_techniques_2.git"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_python_computational_techniques_2.git"
                   }
                 ]
               },
@@ -602,7 +602,7 @@
                   {
                     "name": "Code Generation for Function Calls (compilers)",
                     "dir": "code_gen_func_calls",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_haskell_codegenforfunctioncalls"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_haskell_codegenforfunctioncalls"
                   }
                 ]
               },
@@ -613,7 +613,7 @@
                   {
                     "name": "Operational Semantics (CO 240)",
                     "dir": "operational_semantics",
-                    "remote": "git@bitbucket.org:FreddieALindsey/ic_year_2_latex_operationalsemantics"
+                    "remote": "git@github.com:FreddieLindsey/ic_year_2_latex_operationalsemantics"
                   }
                 ]
               }
