@@ -1,0 +1,21 @@
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
+
+# Customize to your needs...
+source ~/.zprofile
+
+# aliases for zsh configuration
+alias _zs="source ~/.zprezto/init.zsh && echo \"Reloaded config...\""
+alias _zc="vim ~/.zprofile"
+
+# added by travis gem
+[ -f /Users/flindsey/.travis/travis.sh ] && source /Users/flindsey/.travis/travis.sh
