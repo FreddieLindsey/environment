@@ -16,6 +16,3 @@ source ~/.zprofile
 # aliases for zsh configuration
 alias _zs="source ~/.zprezto/init.zsh && echo \"Reloaded config...\""
 alias _zc="vim ~/.zprofile"
-
-# added by travis gem
-[ -f /Users/flindsey/.travis/travis.sh ] && source /Users/flindsey/.travis/travis.sh
