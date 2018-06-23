@@ -29,7 +29,7 @@ for i in "${BREWS[@]}"; do
 done
 
 # Install cask brews
-CASK_BREWS=(bartender istat-menus iterm2 visual-studio-code google-chrome spotify vlc)
+CASK_BREWS=(bartender istat-menus iterm2 font-source-code-pro-for-powerline visual-studio-code google-chrome spotify vlc)
 for i in "${CASK_BREWS[@]}"; do
   notify-start "$(echo CASK\ $i | awk '{print toupper($0)}')"
   brew cask install "$i"
