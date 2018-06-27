@@ -37,7 +37,7 @@ done
 NVM_LTS_VERSIONS=$(nvm ls-remote | sed -e 's/^[ \t]*//' | egrep '^v' | grep "Latest" | awk -F ' ' '{print $1}')
 for i in "${NVM_LTS_VERSIONS[@]}"; do
   notify-start "NVM LTS $i"
-  pyenv install "$i"
+  nvm install "$i"
   notify-end "NVM LTS $i"
 done
 
