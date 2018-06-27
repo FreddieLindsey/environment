@@ -37,7 +37,7 @@ for i in "${CASKS[@]}"; do
 done
 
 # Install cask brews
-CASK_BREWS=(bartender istat-menus iterm2 font-source-code-pro-for-powerline font-fira-code visual-studio-code google-chrome spotify vlc)
+CASK_BREWS=(bartender istat-menus iterm2 font-source-code-pro-for-powerline font-fira-code mactex-no-gui intellij-idea visual-studio-code google-chrome spotify vlc)
 for i in "${CASK_BREWS[@]}"; do
   notify-start "$(echo CASK\ $i | awk '{print toupper($0)}')"
   brew cask install "$i"
@@ -63,3 +63,12 @@ done
 notify-start "ZPREZTO"
 ./install_zprezto.sh
 notify-end "ZPREZTO"
+
+# Increase maxfiles and maxprocesses limits
+PLIST_FILES=(limit.maxfiles.plist limit.maxproc.plist)
+for i in "${PLIST_FILES[@]}"; do
+  sudo cp ./files/${i} /Library/LaunchDaemons
+  sudo chown root:wheel /Library/LaunchDaemons/${i}
+  sudo launchctl unload -w /Library/LaunchDaemons/${i} >/dev/null 2>&1
+  sudo launchctl load -w /Library/LaunchDaemons/${i}
+done
