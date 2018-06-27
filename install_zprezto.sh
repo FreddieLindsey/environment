@@ -1,5 +1,25 @@
 #!/bin/zsh
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd "$DIR"
+
+notify () {
+  echo -e "--------------------------------------------------------------------------"
+  echo -e "--- $1"
+  echo -e "--------------------------------------------------------------------------"
+}
+
+notify-start () {
+  notify "INSTALLING $1"
+}
+
+notify-end () {
+  notify "INSTALLED $1"
+  echo -e "\n"
+}
+
+notify-start "ZPREZTO"
+
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 setopt EXTENDED_GLOB
@@ -11,3 +31,5 @@ chsh -s /bin/zsh
 
 rsync -avz ./files/zprezto/ ~/.zprezto/
 cp ./files/.zpackagemanagers ~/
+
+notify-end "ZPREZTO"
