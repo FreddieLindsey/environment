@@ -1,5 +1,8 @@
 #!/bin/bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd "$DIR"
+
 notify () {
   echo -e "--------------------------------------------------------------------------"
   echo -e "--- $1"
@@ -21,7 +24,7 @@ notify-start "HOMEBREW"
 notify-end "HOMEBREW"
 
 # Install normal brews
-BREWS=(mas pyenv pyenv-virtualenv rbenv nvm)
+BREWS=(mas pyenv pyenv-virtualenv rbenv nvm jenv)
 for i in "${BREWS[@]}"; do
   notify-start "$(echo $i | awk '{print toupper($0)}')"
   brew install "$i"
@@ -29,7 +32,7 @@ for i in "${BREWS[@]}"; do
 done
 
 # Tap other casks
-CASKS=("homebrew/cask-fonts")
+CASKS=("homebrew/cask-fonts" "homebrew/cask-versions")
 for i in "${CASKS[@]}"; do
   notify-start "$(echo $i | awk '{print toupper($0)}')"
   brew tap "$i"
@@ -37,7 +40,7 @@ for i in "${CASKS[@]}"; do
 done
 
 # Install cask brews
-CASK_BREWS=(bartender istat-menus iterm2 font-source-code-pro-for-powerline font-fira-code mactex-no-gui intellij-idea visual-studio-code google-chrome spotify vlc)
+CASK_BREWS=(bartender istat-menus iterm2 font-source-code-pro-for-powerline font-fira-code mactex-no-gui java java8 java6 intellij-idea visual-studio-code google-chrome spotify vlc)
 for i in "${CASK_BREWS[@]}"; do
   notify-start "$(echo CASK\ $i | awk '{print toupper($0)}')"
   brew cask install "$i"
@@ -67,8 +70,10 @@ notify-end "ZPREZTO"
 # Increase maxfiles and maxprocesses limits
 PLIST_FILES=(limit.maxfiles.plist limit.maxproc.plist)
 for i in "${PLIST_FILES[@]}"; do
+  notify-start "$(echo LAUNCH\ FILE\ $i | awk '${print toupper($0)}')"
   sudo cp ./files/${i} /Library/LaunchDaemons
   sudo chown root:wheel /Library/LaunchDaemons/${i}
   sudo launchctl unload -w /Library/LaunchDaemons/${i} >/dev/null 2>&1
   sudo launchctl load -w /Library/LaunchDaemons/${i}
+  notify-end "$(echo LAUNCH\ FILE\ $i | awk '${print toupper($0)}')"
 done

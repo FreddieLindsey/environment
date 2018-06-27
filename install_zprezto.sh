@@ -10,3 +10,4 @@ done
 chsh -s /bin/zsh
 
 rsync -avz ./files/zprezto/ ~/.zprezto/
+cp ./files/.zpackagemanagers ~/
