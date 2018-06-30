@@ -19,14 +19,14 @@ notify-end () {
 }
 
 # Increase maxfiles and maxprocesses limits
-PLIST_FILES=(limit.maxfiles.plist limit.maxproc.plist)
+PLIST_FILES=("limit.maxfiles.plist" "limit.maxproc.plist")
 for i in "${PLIST_FILES[@]}"; do
-  notify-start "$(echo LAUNCH\ FILE\ $i | awk '${print toupper($0)}')"
+  notify-start "$(echo "LAUNCH FILE $i" | awk '{print toupper($0)}')"
   sudo cp ./files/${i} /Library/LaunchDaemons
   sudo chown root:wheel /Library/LaunchDaemons/${i}
   sudo launchctl unload -w /Library/LaunchDaemons/${i} >/dev/null 2>&1
   sudo launchctl load -w /Library/LaunchDaemons/${i}
-  notify-end "$(echo LAUNCH\ FILE\ $i | awk '${print toupper($0)}')"
+  notify-end "$(echo "LAUNCH FILE $i" | awk '{print toupper($0)}')"
 done
 
 ./install_zprezto.sh
