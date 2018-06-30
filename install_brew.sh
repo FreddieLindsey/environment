@@ -41,7 +41,7 @@ done
 
 # Install cask brews
 CASK_BREWS=(
-    bartender istat-menus iterm2 font-source-code-pro-for-powerline font-fira-code
+    bartender istat-menus iterm2 dropbox font-source-code-pro-for-powerline font-fira-code
     mactex-no-gui java java8 java6 intellij-idea visual-studio-code google-chrome
     spotify virtualbox vlc
 )
