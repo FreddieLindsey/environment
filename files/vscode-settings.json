@@ -1,0 +1,15 @@
+{
+    "window.zoomLevel": 0,
+    "editor.fontSize": 14,
+    "editor.fontFamily": "FiraCode, Menlo, Monaco, 'Courier New', monospace",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "window.restoreWindows": "none",
+    "window.title": "${rootName}${separator}${activeEditorShort}",
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true
+}
