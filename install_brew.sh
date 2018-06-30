@@ -24,7 +24,7 @@ notify-start "HOMEBREW"
 notify-end "HOMEBREW"
 
 # Install normal brews
-BREWS=(mas pyenv pyenv-virtualenv rbenv nvm jenv)
+BREWS=(mas pyenv pyenv-virtualenv rbenv nvm jenv ranger wget tmux shellcheck)
 for i in "${BREWS[@]}"; do
   notify-start "$(echo $i | awk '{print toupper($0)}')"
   brew install "$i"
