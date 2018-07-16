@@ -47,7 +47,7 @@ done
 CASK_BREWS=(
     iterm2 font-source-code-pro-for-powerline font-fira-code docker
     mactex-no-gui java java8 java6 intellij-idea visual-studio-code google-chrome
-    virtualbox vlc
+    virtualbox virtualbox-extension-pack vlc
 )
 for i in "${CASK_BREWS[@]}"; do
   notify-start "$(echo CASK\ $i | awk '{print toupper($0)}')"
