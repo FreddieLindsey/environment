@@ -45,3 +45,6 @@ done
 
 # Install Docker images
 ./installers/docker_defaults.sh
+
+# Install settings files
+./installers/settings.sh

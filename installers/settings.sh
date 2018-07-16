@@ -23,7 +23,7 @@ cp files/vscode-settings.json "$HOME/Library/Application Support/Code/User/setti
 notify-end "VSCODE CONFIG"
 
 notify-start "ITERM CONFIG"
-cp files/com.googlecode.iterm2.plist "$HOME/Documents/com.googlecode.iterm2.plist"
+cp files/com.googlecode.iterm2.plist "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
 notify-end "ITERM CONFIG"
 
 notify-start "TMUX CONFIG"
