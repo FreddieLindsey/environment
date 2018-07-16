@@ -19,3 +19,4 @@ export MAN_PATH="$(brew --prefix coreutils)/opt/coreutils/libexec/gnuman:$MAN_PA
 
 # aliases for zsh configuration
 alias _zs="exec zsh"
+alias ls="ls --color=auto"
