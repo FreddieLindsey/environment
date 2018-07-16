@@ -37,7 +37,9 @@ for i in "${PYENV_VERSIONS[@]}"; do
 done
 
 . "$(brew --prefix nvm)/nvm.sh"
-NVM_LTS_VERSIONS=$(nvm ls-remote | sed -e 's/^[ \t]*//' | egrep '^v' | grep "Latest" | awk -F ' ' '{print $1}' | tail -n 1)
+NVM_LTS_VERSIONS=(
+  $(nvm ls-remote | sed -e 's/^[ \t]*//' | egrep '^v' | sed -e 's/v//g' | grep "Latest" | awk -F ' ' '{print $1}')
+)
 for i in "${NVM_LTS_VERSIONS[@]}"; do
   notify-start "NVM LTS $i"
   nvm install $i
