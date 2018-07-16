@@ -10,17 +10,17 @@ notify () {
 }
 
 notify-start () {
-  notify "INSTALLING $1"
+  notify "INSTALLING DOCKER IMAGE: $1"
 }
 
 notify-end () {
-  notify "INSTALLED $1"
+  notify "INSTALLED DOCKER IMAGE: $1"
   echo -e "\n"
 }
 
 # Install normal brews
 DOCKER_IMAGES=("postgres:10" "postgres:9" "ubuntu:14.04" "ubuntu:16.04" "ubuntu:18.04")
-for i in "${BREWS[@]}"; do
+for i in "${DOCKER_IMAGES[@]}"; do
   notify-start "$(echo $i | awk '{print toupper($0)}')"
   eval "docker pull $i"
   notify-end "$(echo $i | awk '{print toupper($0)}')"

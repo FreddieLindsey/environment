@@ -42,3 +42,6 @@ done
 
 # Install extensions for VSCode
 ./installers/vscode_extensions.sh
+
+# Install Docker images
+./installers/docker_defaults.sh
