@@ -3,16 +3,16 @@
 ## --------
 
 # nvm
-export NVM_DIR="$HOME/.nvm"
+export NVM_DIR="$(brew --prefix nvm)"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # jenv
-jenv_path="$HOME/.jenv/bin"
+jenv_path="$(brew --prefix jenv)"
 export PATH="$jenv_path:$PATH"
 [ -d "$jenv_path" ] && eval "$(jenv init -)"
 
 # rbenv
-rbenv_path="$HOME/.rbenv/bin"
+rbenv_path="$(brew --prefix rbenv)"
 export PATH="$rbenv_path:$PATH"
 [ -d "$rbenv_path" ] && eval "$(rbenv init -)"
 

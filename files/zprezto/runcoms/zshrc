@@ -10,9 +10,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
-source ~/.zprofile
+# Load package manager specific configuration
+[ -f ~/.zpackagemanagers ] && source ~/.zpackagemanagers
+
+# Prefer brew installed coreutils 
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+export MAN_PATH="$(brew --prefix coreutils)/opt/coreutils/libexec/gnuman:$MAN_PATH"
 
 # aliases for zsh configuration
-alias _zs="source ~/.zprezto/init.zsh && echo \"Reloaded config...\""
-alias _zc="vim ~/.zprofile"
+alias _zs="exec zsh"

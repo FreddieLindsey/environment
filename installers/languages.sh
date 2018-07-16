@@ -18,30 +18,33 @@ notify-end () {
   echo -e "\n"
 }
 
-notify-start "JENV VERSIONS"
-for i in $(ls /Library/Java/JavaVirtualMachines/); do 
-  jenv add "/Library/Java/JavaVirtualMachines/${i}/Contents/Home"
+PATH="$(brew --prefix jenv):$PATH"
+eval "$(jenv init -)"
+for i in $(ls /Library/Java/JavaVirtualMachines/); do
+  notify-start "JENV VERSION: $i"
+  eval "jenv add /Library/Java/JavaVirtualMachines/${i}/Contents/Home"
+  notify-end "JENV VERSION: $i"
 done
-notify-end "JENV VERSIONS"
 
 PYENV_VERSIONS=(
-  $(pyenv install -l | sed -e 's/^[ \t]*//' | egrep '^2(\d)*(\.(\d)*)+$' | tail -n 1)
-  $(pyenv install -l | sed -e 's/^[ \t]*//' | egrep '^3(\d)*(\.(\d)*)+$' | tail -n 1)
+  $(pyenv install -l | sed -e 's/^[ \t]*//' | egrep '^2(.[[:digit:]]+)+$' | tail -n 1)
+  $(pyenv install -l | sed -e 's/^[ \t]*//' | egrep '^3(.[[:digit:]]+)+$' | tail -n 1)
 )
 for i in "${PYENV_VERSIONS[@]}"; do
   notify-start "PYTHON $i"
-  pyenv install "$i"
+  pyenv install $i
   notify-end "PYTHON $i"
 done
 
-NVM_LTS_VERSIONS=$(nvm ls-remote | sed -e 's/^[ \t]*//' | egrep '^v' | grep "Latest" | awk -F ' ' '{print $1}')
+. "$(brew --prefix nvm)/nvm.sh"
+NVM_LTS_VERSIONS=$(nvm ls-remote | sed -e 's/^[ \t]*//' | egrep '^v' | grep "Latest" | awk -F ' ' '{print $1}' | tail -n 1)
 for i in "${NVM_LTS_VERSIONS[@]}"; do
   notify-start "NVM LTS $i"
-  nvm install "$i"
+  nvm install $i
   notify-end "NVM LTS $i"
 done
 
-NVM_LATEST_VERSION=$(nvm ls-remote | sed -e 's/^[ \t]*//' | egrep '^v(\d)*(\.(\d)*)*$' | tail -n 1)
+NVM_LATEST_VERSION=$(nvm ls-remote | sed -e 's/^[ \t]*//' | egrep '^v[[:digit:]]*(.[[:digit:]]*)*$' | tail -n 1)
 notify-start "NVM LATEST $NVM_LATEST_VERSION"
 nvm install $NVM_LATEST_VERSION
 notify-end "NVM LATEST $NVM_LATEST_VERSION"

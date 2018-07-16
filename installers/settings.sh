@@ -18,18 +18,14 @@ notify-end () {
   echo -e "\n"
 }
 
-notify-start "ZPREZTO"
+notify-start "VSCODE CONFIG"
+cp files/vscode-settings.json "$HOME/Library/Application Support/Code/User/settings.json"
+notify-end "VSCODE CONFIG"
 
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+notify-start "ITERM CONFIG"
+cp files/com.googlecode.iterm2.plist "$HOME/Documents/com.googlecode.iterm2.plist"
+notify-end "ITERM CONFIG"
 
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-  ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
-
-chsh -s /bin/zsh
-
-rsync -avz ./files/zprezto/ ~/.zprezto/
-cp ./files/.zpackagemanagers ~/
-
-notify-end "ZPREZTO"
+notify-start "TMUX CONFIG"
+cp files/.tmux.conf "$HOME/.tmux.conf"
+notify-end "TMUX CONFIG"

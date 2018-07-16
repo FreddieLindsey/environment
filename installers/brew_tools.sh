@@ -18,16 +18,20 @@ notify-end () {
   echo -e "\n"
 }
 
-# Install homebrew
-notify-start "HOMEBREW"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-notify-end "HOMEBREW"
-
 # Install normal brews
-BREWS=(mas pyenv pyenv-virtualenv rbenv nvm jenv ranger wget tmux shellcheck readline xz)
+BREWS=(
+  pyenv pyenv-virtualenv rbenv nvm jenv ranger tmux shellcheck readline xz reattach-to-user-namespace
+  # GNU utils
+  coreutils binutils diffutils "ed --with-default-names" "findutils --with-default-names"
+  gawk "gnu-indent --with-default-names" "gnu-sed --with-default-names" "gnu-tar --with-default-names"
+  "gnu-which --with-default-names" gnutls "grep --with-default-names" gzip screen watch "wdiff --with-gettext" wget
+  # Updated system utils
+  bash emacs gdb gpatch less m4 make nano file-formula git openssh perl python rsync svn unzip
+  "vim --override-system-vi" zsh
+)
 for i in "${BREWS[@]}"; do
   notify-start "$(echo $i | awk '{print toupper($0)}')"
-  brew install "$i"
+  eval "brew install $i"
   notify-end "$(echo $i | awk '{print toupper($0)}')"
 done
 
@@ -35,33 +39,18 @@ done
 CASKS=("homebrew/cask-fonts" "homebrew/cask-versions")
 for i in "${CASKS[@]}"; do
   notify-start "$(echo $i | awk '{print toupper($0)}')"
-  brew tap "$i"
+  eval "brew tap $i"
   notify-end "$(echo $i | awk '{print toupper($0)}')"
 done
 
 # Install cask brews
 CASK_BREWS=(
-    bartender istat-menus iterm2 dropbox font-source-code-pro-for-powerline font-fira-code
+    iterm2 font-source-code-pro-for-powerline font-fira-code docker
     mactex-no-gui java java8 java6 intellij-idea visual-studio-code google-chrome
-    spotify virtualbox vlc
+    virtualbox vlc
 )
 for i in "${CASK_BREWS[@]}"; do
   notify-start "$(echo CASK\ $i | awk '{print toupper($0)}')"
-  brew cask install "$i"
+  eval "brew cask install $i"
   notify-end "$(echo CASK\ $i | awk '{print toupper($0)}')"
-done
-
-# Install apps from Mac App Store
-MAS_APPS_AUTO=(Moom ScanSnap\ Cloud Slack Spark WhatsApp\ Desktop Wunderlist)
-for i in "${MAS_APPS_AUTO[@]}"; do
-  notify-start "$(echo $i | awk '{print toupper($0)}')"
-  mas install "$(mas search "$i" | head -n 1 | awk -F ' ' '{print $1}')"
-  notify-end "$(echo $i | awk '{print toupper($0)}')"
-done
-
-MAS_APPS_MANUAL=(446107677)
-for i in "${MAS_APPS_MANUAL[@]}"; do
-  notify-start "$(echo $i | awk '{print toupper($0)}')"
-  mas install "$i"
-  notify-end "$(echo $i | awk '{print toupper($0)}')"
 done

@@ -18,10 +18,6 @@ notify-end () {
   echo -e "\n"
 }
 
-notify-start "VSCODE CONFIG"
-cp files/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
-notify-end "VSCODE CONFIG"
-
 VSCODE_EXTENSIONS=(
 	"james-yu.latex-workshop" "timonwong.shellcheck" "hnw.vscode-auto-open-markdown-preview"
 	"eg2.tslint" "2gua.rainbow-brackets" "WakaTime.vscode-wakatime" "shinnn.stylelint"

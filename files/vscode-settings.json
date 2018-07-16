@@ -1,6 +1,6 @@
 {
     "window.zoomLevel": 0,
-    "editor.fontSize": 14,
+    "editor.fontSize": 12,
     "editor.fontFamily": "FiraCode, Menlo, Monaco, 'Courier New', monospace",
     "editor.tabSize": 2,
     "editor.wordWrap": "on",

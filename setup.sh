@@ -29,6 +29,16 @@ for i in "${PLIST_FILES[@]}"; do
   notify-end "$(echo "LAUNCH FILE $i" | awk '{print toupper($0)}')"
 done
 
-./install_zprezto.sh
-./install_brew.sh
-./install_languages.sh
+# Brew
+./installers/brew.sh
+./installers/brew_tools.sh
+# ./installers/brew_desktop.sh
+
+# Shell
+./installers/zprezto.sh
+
+# Install latest node, ruby, python, and java (symlinks)
+./installers/languages.sh
+
+# Install extensions for VSCode
+./installers/vscode_extensions.sh
