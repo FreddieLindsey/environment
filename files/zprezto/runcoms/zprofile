@@ -66,8 +66,5 @@ fi
 alias hlog='git log --date-order --all --graph --format="%C(green)%H%Creset %C(yellow)%an%Creset %C(blue bold)%ad%Creset %C(red bold)%d%Creset%s"'
 alias gbranch='git branch --sort=-committerdate'
 
-# Package Managers
-[ -z "~/.zpackagemanagers" ]  && source ~/.zpackagemanagers
-
 setopt noincappendhistory
 setopt nosharehistory
