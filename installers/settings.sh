@@ -18,14 +18,10 @@ notify-end () {
   echo -e "\n"
 }
 
-notify-start "VSCODE CONFIG"
-cp files/vscode-settings.json "$HOME/Library/Application Support/Code/User/settings.json"
-notify-end "VSCODE CONFIG"
-
 notify-start "ITERM CONFIG"
-cp files/com.googlecode.iterm2.plist "$HOME/Library/Preferences/com.googlecode.iterm2.plist"
+ln -sf "$PWD/files/com.googlecode.iterm2.plist" "$HOME/Documents/com.googlecode.iterm2.plist"
 notify-end "ITERM CONFIG"
 
 notify-start "TMUX CONFIG"
-cp files/.tmux.conf "$HOME/.tmux.conf"
+ln -sf "$PWD/files/.tmux.conf" "$HOME/.tmux.conf"
 notify-end "TMUX CONFIG"
