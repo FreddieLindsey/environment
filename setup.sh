@@ -34,7 +34,6 @@ done
 
 # Shell
 ./installers/zprezto.sh
-exec /bin/zsh
 
 # Install latest languages
 ./installers/languages.sh
