@@ -50,7 +50,7 @@ done
 # Install cask brews
 CASK_BREWS=(
     1password bartender docker font-source-code-pro-for-powerline font-fira-code
-    jetbrains-toolbox istat-menus iterm2 signal spotify visual-studio-code
+    jetbrains-toolbox istat-menus iterm2 signal spotify visual-studio-code whatsapp
 )
 for i in "${CASK_BREWS[@]}"; do
   notify-start "$(echo CASK\ $i | awk '{print toupper($0)}')"
