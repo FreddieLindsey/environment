@@ -18,10 +18,6 @@ notify-end () {
   echo -e "\n"
 }
 
-notify-start "ITERM CONFIG"
-ln -sf "$PWD/files/com.googlecode.iterm2.plist" "$HOME/Documents/com.googlecode.iterm2.plist"
-notify-end "ITERM CONFIG"
-
 notify-start "TMUX CONFIG"
-ln -sf "$PWD/files/.tmux.conf" "$HOME/.tmux.conf"
+ln -sf "$HOME/Dropbox/Apps/tmux/tmux.conf" "$HOME/.tmux.conf"
 notify-end "TMUX CONFIG"

@@ -31,17 +31,13 @@ done
 
 # Brew
 ./installers/brew.sh
-./installers/brew_tools.sh
-# ./installers/brew_desktop.sh
 
 # Shell
 ./installers/zprezto.sh
+exec /bin/zsh
 
-# Install latest node, ruby, python, and java (symlinks)
+# Install latest languages
 ./installers/languages.sh
-
-# Install extensions for VSCode
-./installers/vscode_extensions.sh
 
 # Install Docker images
 ./installers/docker_defaults.sh

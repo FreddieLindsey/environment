@@ -21,7 +21,7 @@ notify-end () {
 notify-start "ZPREZTO"
 
 [ -e ~/.zprezto ] && rm -rf ~/.zprezto
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+git clone --recursive https://github.com/freddielindsey/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 
 setopt EXTENDED_GLOB
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
@@ -29,8 +29,5 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
 done
 
 chsh -s /bin/zsh
-
-rsync -avz ./files/zprezto/ ~/.zprezto/
-cp ./files/.zpackagemanagers ~/
 
 notify-end "ZPREZTO"
